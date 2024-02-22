@@ -1,0 +1,212 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3 (Nov 2019); http://hmmer.org/
+# Copyright (C) 2019 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  combined_database.hmm
+# target sequence database:        one_sample.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       safe  [M=50]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+    4.2e-18   54.1   0.3    4.5e-18   54.0   0.3    1.0  1  192.168.56.153,2.21.242.237,0    
+    7.5e-18   53.3  41.3    1.3e-17   52.5  41.3    1.4  1  192.168.56.153,23.63.139.27,0    
+    3.3e-12   35.2   7.0      4e-12   34.9   7.0    1.0  1  192.168.56.153,52.138.148.159,0  
+    1.3e-09   26.9  47.9    2.2e-09   26.2  47.9    1.4  1  192.168.56.153,23.205.229.72,0   
+    3.3e-09   25.6   7.7    3.3e-09   25.6   7.7    1.0  1  192.168.56.153,93.184.220.20,0   
+      2e-07   19.9  21.8    2.1e-07   19.8  21.8    1.1  1  192.168.56.153,93.184.220.29,0   
+
+
+Domain annotation for each sequence (and alignments):
+>> 192.168.56.153,2.21.242.237,0  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   54.0   0.3   3.4e-18   4.5e-18       1      50 []       1      50 []       1      50 [] 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 54.0 bits;  conditional E-value: 3.4e-18
+                           safe  1 MWLVMTkkLWesmtlwmtlwlwlsmwmtmwlwmtltmtlwmtmtmtmtmt 50
+                                   MWLVMT+ LW+s+++++++++++s++++m+++++++++++++++++++++
+  192.168.56.153,2.21.242.237,0  1 MWLVMTOGLWASASASASASASASASASMTASASASASASASASASASAS 50
+                                   **********************************************9986 PP
+
+>> 192.168.56.153,23.63.139.27,0  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   52.5  41.3   9.7e-18   1.3e-17       1      48 [.       1      48 []       1      48 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 52.5 bits;  conditional E-value: 9.7e-18
+                           safe  1 MWLVMTkkLWesmtlwmtlwlwlsmwmtmwlwmtltmtlwmtmtmtmt 48
+                                   MWLVMT++LW+s +++m+l +++ +w++  +++++tmtlw++mtmt++
+  192.168.56.153,23.63.139.27,0  1 MWLVMTOOLWASGYMTMWLVMTOOLWASIAMTLWMTMTLWLWMTMTLW 48
+                                   **********************************************99 PP
+
+>> 192.168.56.153,52.138.148.159,0  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.9   7.0     3e-12     4e-12       1      46 [.       1      46 [.       1      49 [. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 34.9 bits;  conditional E-value: 3e-12
+                             safe  1 MWLVMTkkLWesmtlwmtlwlwlsmwmtmwlwmtltmtlwmtmtmt 46
+                                     MWLVMT+k  ++++++  ++  + +w++ +++ +   +lw++  mt
+  192.168.56.153,52.138.148.159,0  1 MWLVMTPKXVUCLWASIDMTPKWPLWASIDMTPKXVPQLWASIDMT 46
+                                     ******************************************9998 PP
+
+>> 192.168.56.153,23.205.229.72,0  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.2  47.9   1.6e-09   2.2e-09       1      50 []       1      50 []       1      50 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 26.2 bits;  conditional E-value: 1.6e-09
+                            safe  1 MWLVMTkkLWesmtlwmtlwlwlsmwmtmwlwmtltmtlwmtmtmtmtmt 50
+                                    MWLVMT+    ++++ ++++++l++w++mwl mt  + lw++++mt++mt
+  192.168.56.153,23.205.229.72,0  1 MWLVMTPLXZTYLWKKLWMTMTLWLWLWMWLVMTPLWPLWLWKKMTLWMT 50
+                                    *************************************************8 PP
+
+>> 192.168.56.153,93.184.220.20,0  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.6   7.7   2.5e-09   3.3e-09       1      18 [.       1      18 []       1      18 [] 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 25.6 bits;  conditional E-value: 2.5e-09
+                            safe  1 MWLVMTkkLWesmtlwmt 18
+                                    MWLVMT++LW+s++  mt
+  192.168.56.153,93.184.220.20,0  1 MWLVMTNWLWASASBEMT 18
+                                    **************9997 PP
+
+>> 192.168.56.153,93.184.220.29,0  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.8  21.8   1.6e-07   2.1e-07       1      22 [.       1      22 []       1      22 [] 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 19.8 bits;  conditional E-value: 1.6e-07
+                            safe  1 MWLVMTkkLWesmtlwmtlwlw 22
+                                    MWLVMT++LW + ++w+  w++
+  192.168.56.153,93.184.220.29,0  1 MWLVMTOOLWFWFWMWOOFWMT 22
+                                    ********************97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (50 nodes)
+Target sequences:                          8  (270 residues searched)
+Passed MSV filter:                         8  (1); expected 0.2 (0.02)
+Passed bias filter:                        7  (0.875); expected 0.2 (0.02)
+Passed Vit filter:                         6  (0.75); expected 0.0 (0.001)
+Passed Fwd filter:                         6  (0.75); expected 0.0 (1e-05)
+Initial search space (Z):                  8  [actual number of targets]
+Domain search space  (domZ):               6  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 7.15
+//
+Query:       bad  [M=50]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+    2.5e-15   45.3   0.2      3e-15   45.0   0.2    1.2  1  192.168.56.153,2.21.242.237,0    
+    2.7e-15   45.1  41.6    5.3e-15   44.2  41.6    1.5  1  192.168.56.153,23.63.139.27,0    
+    1.7e-09   26.6   8.3    1.8e-09   26.5   8.3    1.0  1  192.168.56.153,93.184.220.20,0   
+    2.9e-09   25.8   8.7    3.2e-09   25.7   8.7    1.1  1  192.168.56.153,52.138.148.159,0  
+    1.2e-07   20.7  18.5    1.4e-07   20.5  18.5    1.1  1  192.168.56.153,93.184.220.29,0   
+    4.2e-07   18.9  50.1    1.3e-06   17.4  50.1    2.0  1  192.168.56.153,23.205.229.72,0   
+
+
+Domain annotation for each sequence (and alignments):
+>> 192.168.56.153,2.21.242.237,0  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   45.0   0.2   2.3e-15     3e-15       1      50 []       1      50 []       1      50 [] 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 45.0 bits;  conditional E-value: 2.3e-15
+                            bad  1 MWLVMTnmLWesphlmmtlwlwltlwlwlwltmtmtmwltmsmtltltls 50
+                                   MWLVMT+ LW+s++      ++++  +++++++++++++++s+++++++s
+  192.168.56.153,2.21.242.237,0  1 MWLVMTOGLWASASASASASASASASASMTASASASASASASASASASAS 50
+                                   **********************************************9986 PP
+
+>> 192.168.56.153,23.63.139.27,0  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   44.2  41.6     4e-15   5.3e-15       1      48 [.       1      48 []       1      48 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 44.2 bits;  conditional E-value: 4e-15
+                            bad  1 MWLVMTnmLWesphlmmtlwlwltlwlwlwltmtmtmwltmsmtltlt 48
+                                   MWLVMT++LW+s +++m+l +++ lw++  +t++mtm+l+++mt+tl+
+  192.168.56.153,23.63.139.27,0  1 MWLVMTOOLWASGYMTMWLVMTOOLWASIAMTLWMTMTLWLWMTMTLW 48
+                                   **********************************************99 PP
+
+>> 192.168.56.153,93.184.220.20,0  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.5   8.3   1.3e-09   1.8e-09       1      18 [.       1      18 []       1      18 [] 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 26.5 bits;  conditional E-value: 1.3e-09
+                             bad  1 MWLVMTnmLWesphlmmt 18
+                                    MWLVMTn+LW+s++  mt
+  192.168.56.153,93.184.220.20,0  1 MWLVMTNWLWASASBEMT 18
+                                    *************99998 PP
+
+>> 192.168.56.153,52.138.148.159,0  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.7   8.7   2.4e-09   3.2e-09       1      47 [.       1      47 [.       1      50 [] 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 25.7 bits;  conditional E-value: 2.4e-09
+                              bad  1 MWLVMTnmLWesphlmmtlwlwltlwlwlwltmtmtmwltmsmtltl 47
+                                     MWLVMT + +++++    ++  + lw++  +t   + +l++s  +t 
+  192.168.56.153,52.138.148.159,0  1 MWLVMTPKXVUCLWASIDMTPKWPLWASIDMTPKXVPQLWASIDMTP 47
+                                     *****************************************998885 PP
+
+>> 192.168.56.153,93.184.220.29,0  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.5  18.5     1e-07   1.4e-07       1      22 [.       1      22 []       1      22 [] 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 20.5 bits;  conditional E-value: 1e-07
+                             bad  1 MWLVMTnmLWesphlmmtlwlw 22
+                                    MWLVMT++LW + ++++  w++
+  192.168.56.153,93.184.220.29,0  1 MWLVMTOOLWFWFWMWOOFWMT 22
+                                    ********************96 PP
+
+>> 192.168.56.153,23.205.229.72,0  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.4  50.1   9.5e-07   1.3e-06       1      50 []       1      50 []       1      50 [] 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 17.4 bits;  conditional E-value: 9.5e-07
+                             bad  1 MWLVMTnmLWesphlmmtlwlwltlwlwlwltmtmtmwltmsmtltltls 50
+                                    MWLVMT      ++  ++++++l+lwlw+wl mt    l++++ +tl+++
+  192.168.56.153,23.205.229.72,0  1 MWLVMTPLXZTYLWKKLWMTMTLWLWLWMWLVMTPLWPLWLWKKMTLWMT 50
+                                    ******99999998888888888888888888888888888888888886 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (50 nodes)
+Target sequences:                          8  (270 residues searched)
+Passed MSV filter:                         8  (1); expected 0.2 (0.02)
+Passed bias filter:                        7  (0.875); expected 0.2 (0.02)
+Passed Vit filter:                         6  (0.75); expected 0.0 (0.001)
+Passed Fwd filter:                         6  (0.75); expected 0.0 (1e-05)
+Initial search space (Z):                  8  [actual number of targets]
+Domain search space  (domZ):               6  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 8.18
+//
+[ok]

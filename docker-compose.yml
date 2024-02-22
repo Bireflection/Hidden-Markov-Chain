@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+    detection:
+        build: .
+        container_name: malDetection
+        ports:
+          - "8899:8888"
+          - "1213:8889"
+          - "1214:8890"
+        volumes:
+          - ".:/data"
+        depends_on:
+          - db
+        command: ["jupyter", "notebook", "--ip=0.0.0.0","--allow-root", "--NotebookApp.token=lab5212", '--port=8888']
+        networks:
+          backend:
+    db:
+        image: mysql:5.7
+        restart: always
+        container_name: MalDetectionDB
+        volumes:
+          - "./db/:/data"
+        environment:
+          MYSQL_ROOT_PASSWORD: lab5212
+          MYSQL_DATABASE: malware
+          MYSQL_USER: yutangda
+          MYSQL_PASSWORD: lab5212
+        networks:
+          backend:
+
+networks:
+    backend:
+        driver: bridge
+
